@@ -1,1 +1,1 @@
-# Web_Dev_Mini_Projects
+# Web Development Mini-Projects
