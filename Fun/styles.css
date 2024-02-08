@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    background-color: #ffcccc; 
+    color: #ff0066;
+    font-family: 'Protest Riot', sans-serif;
+}
+
+h1 {
+    margin-bottom: 20px; 
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+.btn button {
+    display: inline-block;
+    background-color: #f98bb7;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.5s;
+    margin-right: 20px;
+}
+
+#yesBtn:hover {
+    background-color: #f70935; 
+    transition: 0.7s ease-in-out;
+}
+
+#noBtn:hover {
+    background-color: #5d5d5d; 
+    transition: 0.7s ease-in-out;
+}
+
+.btn button::before,
+.btn button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 52px;
+    height: 20px;
+    border-radius: 30px 30px 0 0;
+    background: #f98bb7;
+}
+
+.btn button::before {
+    left: 50px;
+    transform: rotate(45deg);
+}
+
+.btn button::after {
+    left: 50px;
+    transform: rotate(-45deg);
+}
+
+.btn button:hover::before,
+.btn button:hover::after {
+    background-color: #f70935;
+    transition: 0.7s ease-in-out;
+
+}
+
+#message{
+    font-size: 1.5rem;
+    margin-top: 30px;
+}
+
+#noBtn {
+    transition: top 0.9s, left 0.9s; 
+}
+
+
